@@ -1,0 +1,4 @@
+ln -s $HOME/repo/dotfiles/vim $HOME/.vim
+ln -s $HOME/repo/dotfiles/vimrc $HOME/.vimrc
+sudo ln -s $HOME/repo/dotfiles/etc/redis /etc/redis
+sudo ln -s $HOME/repo/dotfiles/etc/init.d/redis-server /etc/init.d/redis-server
