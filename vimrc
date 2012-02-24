@@ -10,6 +10,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set t_Co=256
+set background=dark
 set visualbell
 " Maintain more context around the cursor
 set scrolloff=3
@@ -17,7 +18,7 @@ set scrolloff=3
 set backupdir=~/.vim-tmp
 set directory=~/.vim-tmp
 let mapleader = ","
-colorscheme desert256
+colorscheme solarized 
 
 "set runtimepath+=$HOME/.vim/plugins
 let g:miniBufExplMapWindowNavVim=1
