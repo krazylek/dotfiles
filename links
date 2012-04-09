@@ -5,3 +5,4 @@ sudo ln -s $HOME/repo/dotfiles/etc/init.d/redis-server /etc/init.d/redis-server
 ln -s $HOME/repo/dotfiles/bashrc $HOME/.bashrc
 ln -s $HOME/repo/dotfiles/bash_profile $HOME/.bash_profile
 sudo ln -s $HOME/repo/dotfiles/etc/apache2/sites-available /etc/apache2/sites-available
+sudo ln -s $HOME/repo/dotfiles/etc/php5/cgi/php.ini /etc/php5/cgi/php.ini
