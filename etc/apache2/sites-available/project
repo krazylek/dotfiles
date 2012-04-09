@@ -1,0 +1,26 @@
+#Projets clients
+<VirtualHost *:8080>
+        ServerAdmin webmaster@visual-salade.com
+
+        DocumentRoot /home/visual-salade.com/project/
+
+        ServerName visual-salade.com:8080
+        ServerAlias project.visual-salade.com
+
+
+	<Directory />
+                Options FollowSymLinks
+                AllowOverride None
+        </Directory>
+
+        <Directory /home/visual-salade.com/project/>
+                Options Indexes FollowSymLinks MultiViews +ExecCGI
+                AllowOverride All
+
+		Order allow,deny
+                allow from all
+        </Directory>
+
+
+</VirtualHost>
+

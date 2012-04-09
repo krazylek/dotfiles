@@ -1,0 +1,40 @@
+#BLOG VOYAGE
+<VirtualHost *:8080>
+        ServerAdmin webmaster@selephemere.com
+
+        DocumentRoot /home/selephemere.com/blog/
+
+        ServerName selephemere.com:8080
+        ServerAlias www.selephemere.com
+
+#	DirectoryIndex index.html index.shtml index.cgi index.php
+#        RewriteEngine on
+#        RewriteRule (.*) /home/visual-salase.com/hg/hgwebdir.cgi/$1
+
+        <Directory /home/selephemere.com/blog/>
+                Options Indexes FollowSymLinks MultiViews +ExecCGI
+                AllowOverride All
+		DirectoryIndex index.html index.php
+                Order allow,deny
+                Allow from all
+        </Directory>
+
+	Alias /notes "/home/selephemere.com/notes"
+        <Directory /home/selephemere.com/notes/>
+                Options Indexes FollowSymLinks MultiViews +ExecCGI
+                AllowOverride All
+                Order allow,deny
+                Allow from all
+        </Directory>
+
+	Alias /docs "/home/selephemere.com/docs"
+        <Directory /home/selephemere.com/docs/>
+                Options Indexes FollowSymLinks MultiViews +ExecCGI
+                AllowOverride All
+                Order allow,deny
+                Allow from all
+        </Directory>
+
+
+</VirtualHost>
+

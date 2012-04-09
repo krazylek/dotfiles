@@ -1,8 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/home/benoit/nodeprojects/express/views'
 let g:netrw_dirhist_2='../../out'
 let g:netrw_dirhist_3='/etc/apache2/mods-enabled'
 let g:netrw_dirhist_4='/home/benoit/repo/dotfiles/vim'
 let g:netrw_dirhist_5='/home/benoit/nodeprojects/redistest/routes'
 let g:netrw_dirhist_6='/home/benoit/.vim'
+let g:netrw_dirhist_7='/etc/nginx/conf.d'
+let g:netrw_dirhist_8='/etc/apache2/sites-available'
