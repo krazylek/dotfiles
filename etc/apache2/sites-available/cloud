@@ -1,0 +1,23 @@
+#ownclouid
+
+<VirtualHost *:8080>
+ServerAdmin webmaster@visual-salade.com
+
+DocumentRoot /home/visual-salade.com/owncloud/
+
+ServerName visual-salade.com:8080
+
+ServerAlias cloud.visual-salade.com
+
+
+<Directory /home/visual-salade.com/owncloud/>
+Options Indexes FollowSymLinks MultiViews +ExecCGI
+AllowOverride All
+
+DirectoryIndex index.php
+Order allow,deny
+allow from all
+</Directory>
+
+</VirtualHost>
+
