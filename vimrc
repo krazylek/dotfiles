@@ -1,4 +1,4 @@
-"Pathogen plugin management (should be first)
+"ePathogen plugin management (should be first)
 call pathogen#infect()
 "call pathogen#runtime_append_all_bundles()
 
@@ -29,3 +29,7 @@ let g:miniBufExplModSelTarget=1
 "omnicompletion
 set ofu=syntaxcomplete#Complete
 
+" Turn off auto-indent when pasting text
+set pastetoggle=<F3>
+" Open/Close NERDTree
+map <F2> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
