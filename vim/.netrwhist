@@ -1,4 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/etc/apache2/sites-enabled'
 let g:netrw_dirhist_2='/home/benoit/nodeprojects/resolutions2012'
+let g:netrw_dirhist_3='/usr/local/bin'
+let g:netrw_dirhist_4='/home/benoit/projects'
+let g:netrw_dirhist_5='/etc/apache2/conf.d'
+let g:netrw_dirhist_6='/var/log/apache2'

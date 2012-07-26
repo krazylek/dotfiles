@@ -17,6 +17,8 @@ set scrolloff=3
 " Store temporary files in a central spot
 set backupdir=~/.vim-tmp
 set directory=~/.vim-tmp
+" line number at the bottom
+set ruler
 let mapleader = ","
 colorscheme solarized 
 
@@ -26,6 +28,9 @@ let g:miniBufExplMapWindowNavArrows=1
 let g:miniBufExplMapCTabSwitchBufs=1
 let g:miniBufExplModSelTarget=1
 
+"powerline
+let g:Powerline_symbols = 'fancy'
+
 "omnicompletion
 set ofu=syntaxcomplete#Complete
 
@@ -33,3 +38,6 @@ set ofu=syntaxcomplete#Complete
 set pastetoggle=<F3>
 " Open/Close NERDTree
 map <F2> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
+
+"cygwin backspace tweak
+set backspace=indent,eol,start
