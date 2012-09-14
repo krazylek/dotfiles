@@ -13,3 +13,5 @@ sudo ln -s $HOME/repo/dotfiles/etc/apache2/httpd.conf /etc/apache2/httpd.conf
 sudo ln -s $HOME/repo/dotfiles/etc/php5/cgi/php.ini /etc/php5/cgi/php.ini
 # Nginx conf
 sudo ln -s $HOME/repo/dotfiles/etc/nginx/sites-available /etc/nginx/sites-available
+# Jenkins conf
+sudo ln -s $HOME/repo/dotfiles/etc/default/jenkins /etc/default/jenkins

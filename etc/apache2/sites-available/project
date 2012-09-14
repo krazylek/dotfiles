@@ -1,29 +1,37 @@
 #Projets clients
 <VirtualHost *:8080>
-
-
         ServerAdmin webmaster@visual-salade.com
 
         DocumentRoot /home/visual-salade.com/project/
 
-        ServerName visual-salade.com:8080
+        ServerName visual-salade.com
         ServerAlias project.visual-salade.com
 
-  <IfModule mod_fcgid.c>
-  AddHandler fcgid-script .fcgi
-  IdleTimeout 300
-  BusyTimeout 300
-  ProcessLifeTime 7200
-  IPCConnectTimeout 300
-  IPCCommTimeout 7200
-  </IfModule> 
+        Alias /kpiplatform /home/visual-salade.com/project/kpi/web
 
-	<Directory />
-                Options FollowSymLinks
-                AllowOverride None
-        </Directory>
+      <Directory /home/benoit/kpi-pro/>
+                Options Indexes FollowSymLinks MultiViews +ExecCGI
+                AllowOverride All
 
-        <Directory /home/visual-salade.com/project/>
+                Order allow,deny
+                allow from all
+      </Directory>
+ 
+      <IfModule mod_fcgid.c>
+        AddHandler fcgid-script .fcgi
+        IdleTimeout 300
+        BusyTimeout 300
+        ProcessLifeTime 7200
+        IPCConnectTimeout 300
+        IPCCommTimeout 7200
+    </IfModule> 
+
+    <Directory />
+        Options FollowSymLinks
+        AllowOverride None
+    </Directory>
+
+    <Directory /home/visual-salade.com/project/>
                 Options Indexes FollowSymLinks MultiViews +ExecCGI
                 AllowOverride All
 

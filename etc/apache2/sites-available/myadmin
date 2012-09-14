@@ -4,7 +4,7 @@
 
         DocumentRoot /usr/share/phpmyadmin/
 
-        ServerName visual-salade.com:8080
+        ServerName visual-salade.com
 
         ServerAlias myadmin.visual-salade.com
 

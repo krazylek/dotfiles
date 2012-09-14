@@ -5,7 +5,7 @@ ServerAdmin webmaster@visual-salade.com
 
 DocumentRoot /home/visual-salade.com/owncloud/
 
-ServerName visual-salade.com:8080
+ServerName visual-salade.com
 
 ServerAlias cloud.visual-salade.com
 

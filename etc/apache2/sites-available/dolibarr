@@ -4,7 +4,7 @@
 
         DocumentRoot /home/visual-salade.com/dolibarr/htdocs/
 
-        ServerName visual-salade.com:8080
+        ServerName visual-salade.com
 
         ServerAlias dolibarr.visual-salade.com
 
