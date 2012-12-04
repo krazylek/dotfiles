@@ -9,4 +9,10 @@
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "vim/bundle/vim-powerline"]
 	path = vim/bundle/vim-powerline
-	url = https://github.com/Lokaltog/vim-powerline.git
+  url = https://github.com/Lokaltog/vim-powerline.git
+[submodule "vim/bundle/golden-ratio"]
+  path = vim/bundle/golden-ratio
+  url = git://github.com/vim-scripts/golden-ratio.git
+[submodule "vim/bundle/vim-twig"]
+  path = vim/bundle/vim-twig
+  url = https://github.com/beyondwords/vim-twig.git 
