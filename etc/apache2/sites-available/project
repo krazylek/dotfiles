@@ -7,24 +7,32 @@
         ServerName visual-salade.com
         ServerAlias project.visual-salade.com
 
-        Alias /kpiplatform /home/visual-salade.com/project/kpi/web
+        #Alias /kpiplatform /home/visual-salade.com/project/kpi/web
+        #<Directory /home/benoit/kpi-pro/>
+                  #Options Indexes FollowSymLinks MultiViews +ExecCGI
+                  #AllowOverride All
 
-      <Directory /home/benoit/kpi-pro/>
-                Options Indexes FollowSymLinks MultiViews +ExecCGI
-                AllowOverride All
+                  #Order allow,deny
+                  #allow from all
+        #</Directory>
+   
+        #Alias /kpi-dev /home/visual-salade.com/project/kpi-dev/web
+        #<Directory /home/benoit/projet/kpi-dev/>
+                  #Options Indexes FollowSymLinks MultiViews +ExecCGI
+                  #AllowOverride All
 
-                Order allow,deny
-                allow from all
-      </Directory>
- 
-      <IfModule mod_fcgid.c>
-        AddHandler fcgid-script .fcgi
-        IdleTimeout 300
-        BusyTimeout 300
-        ProcessLifeTime 7200
-        IPCConnectTimeout 300
-        IPCCommTimeout 7200
-    </IfModule> 
+                  #Order allow,deny
+                  #allow from all
+        #</Directory>
+   
+        <IfModule mod_fcgid.c>
+          AddHandler fcgid-script .fcgi
+          IdleTimeout 300
+          BusyTimeout 300
+          ProcessLifeTime 7200
+          IPCConnectTimeout 300
+          IPCCommTimeout 7200
+        </IfModule> 
 
     <Directory />
         Options FollowSymLinks
