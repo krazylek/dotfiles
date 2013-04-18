@@ -41,3 +41,7 @@ map <F2> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 
 "cygwin backspace tweak
 set backspace=indent,eol,start
+
+"subline in edit mode
+:autocmd InsertEnter,InsertLeave * set cul!
+
