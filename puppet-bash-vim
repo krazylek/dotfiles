@@ -1,0 +1,25 @@
+$username = "vagrant"
+
+# vim
+file { "/home/$username/.vimrc":
+	ensure 	=> 'link',
+	target	=> "/home/$username/repo/dotfiles/vimrc",
+}
+file { "/home/$username/.vim":
+	ensure 	=> 'link',
+	target	=> "/home/$username/repo/dotfiles/vim",
+}
+file { "/home/$username/.vim-tmp":
+  ensure  => 'directory',
+}
+
+# bash
+
+file { "/home/$username/.bashrc":
+	ensure 	=> 'link',
+	target	=> "/home/$username/repo/dotfiles/bashrc",
+}
+file { "/home/$username/.bash_profile":
+	ensure 	=> 'link',
+	target	=> "/home/$username/repo/dotfiles/bash_profile",
+}
