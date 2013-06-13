@@ -21,6 +21,7 @@ set directory=~/.vim-tmp
 set ruler
 let mapleader = ","
 colorscheme solarized 
+colorscheme desert256
 
 "set runtimepath+=$HOME/.vim/plugins
 let g:miniBufExplMapWindowNavVim=1
