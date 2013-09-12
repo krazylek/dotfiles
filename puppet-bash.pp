@@ -1,4 +1,4 @@
-# vim
+# bash
 
 // global var to put in a class
 $username = "benoit"
@@ -9,15 +9,12 @@ case $operatingsystem {
 $repodir = "$homedir/repo"
 
 
-file { "$homedir/.vimrc":
-	ensure 	=> 'link',
-	target	=> "$homedir/repo/dotfiles/vimrc",
-}
-file { "$homedir/.vim":
-	ensure 	=> 'link',
-	target	=> "homedir/repo/dotfiles/vim",
-}
-file { "$homedir/.vim-tmp":
-  ensure  => 'directory',
-}
 
+file { "$homedir/.bashrc":
+	ensure 	=> 'link',
+	target	=> "$repodir/dotfiles/bashrc",
+}
+file { "$homedir/.bash_profile":
+	ensure 	=> 'link',
+	target	=> "$repodir/dotfiles/bash_profile",
+}

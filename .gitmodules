@@ -7,9 +7,6 @@
 [submodule "vim/bundle/nerdtree"]
 	path = vim/bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git 
-[submodule "vim/bundle/vim-powerline"]
-	path = vim/bundle/vim-powerline
-  url = git://github.com/Lokaltog/vim-powerline.git
 [submodule "vim/bundle/golden-ratio"]
   path = vim/bundle/golden-ratio
   url = git://github.com/vim-scripts/golden-ratio.git
@@ -19,3 +16,6 @@
 [submodule "vim/bundle/vim-markdown"]
 	path = vim/bundle/vim-markdown
 	url = git://github.com/plasticboy/vim-markdown.git
+[submodule "vim/bundle/lightline.vim"]
+	path = vim/bundle/lightline.vim
+	url = https://github.com/itchyny/lightline.vim

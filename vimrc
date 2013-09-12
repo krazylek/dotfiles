@@ -29,8 +29,8 @@ let g:miniBufExplMapWindowNavArrows=1
 let g:miniBufExplMapCTabSwitchBufs=1
 let g:miniBufExplModSelTarget=1
 
-"powerline
-let g:Powerline_symbols = 'fancy'
+"lightline
+set laststatus=2
 
 "omnicompletion
 set ofu=syntaxcomplete#Complete
