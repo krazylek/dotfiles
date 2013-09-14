@@ -46,3 +46,5 @@ set backspace=indent,eol,start
 "subline in edit mode
 :autocmd InsertEnter,InsertLeave * set cul!
 
+" markdown unfolded
+let g:vim_markdown_folding_disabled=1
