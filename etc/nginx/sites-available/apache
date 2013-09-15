@@ -106,6 +106,7 @@ server {
 server {
   server_name   marthe-aroundtheworld.com www.marthe-aroundtheworld.com;
   root          /home/marthe/blog;
+  client_max_body_size 12m;
 
   location / {
     proxy_pass http://127.0.0.1:8080;

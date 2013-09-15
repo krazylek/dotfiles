@@ -1,3 +1,5 @@
 **/*~
 *~
 *.swp
+node_bundles
+.DS_Store
