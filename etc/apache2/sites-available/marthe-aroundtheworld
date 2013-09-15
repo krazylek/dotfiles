@@ -1,0 +1,25 @@
+#BLOG VOYAGE
+<VirtualHost *:8080>
+        ServerAdmin webmaster@marthe-aroundtheworld.com
+
+        DocumentRoot /home/marthe/blog/
+
+        ServerName marthe-aroundtheworld.com:8080
+        ServerAlias www.marthe-aroundtheworld.com
+
+#	DirectoryIndex index.html index.shtml index.cgi index.php
+#        RewriteEngine on
+#        RewriteRule (.*) /home/visual-salase.com/hg/hgwebdir.cgi/$1
+
+        <Directory /home/marthe/blog/>
+            Options Indexes FollowSymLinks MultiViews +ExecCGI
+            AllowOverride All
+            DirectoryIndex index.html index.php
+            Order allow,deny
+            Allow from all
+        </Directory>
+
+
+
+</VirtualHost>
+
