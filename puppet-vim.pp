@@ -1,6 +1,6 @@
 # vim
 
-// global var to put in a class
+# global var to put in a class
 $username = "benoit"
 case $operatingsystem {
   macosx: { $homedir = "/Users/$username" }
@@ -15,7 +15,7 @@ file { "$homedir/.vimrc":
 }
 file { "$homedir/.vim":
 	ensure 	=> 'link',
-	target	=> "homedir/repo/dotfiles/vim",
+	target	=> "$homedir/repo/dotfiles/vim",
 }
 file { "$homedir/.vim-tmp":
   ensure  => 'directory',
