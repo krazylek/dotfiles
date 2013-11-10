@@ -29,7 +29,7 @@ let g:miniBufExplMapWindowNavArrows=1
 let g:miniBufExplMapCTabSwitchBufs=1
 let g:miniBufExplModSelTarget=1
 
-"lightline
+" lightline (minihack)
 set laststatus=2
 
 "omnicompletion
@@ -48,3 +48,13 @@ set backspace=indent,eol,start
 
 " markdown unfolded
 let g:vim_markdown_folding_disabled=1
+
+" tagbar shortcut
+nmap <F8> :TagbarToggle<CR>
+
+" tern shortcuts
+nmap <leader>d :TernDef<CR>
+nmap <F12> :TernDef<CR>
+nmap <leader>i :TernDoc<CR>
+nmap <leader>v :TernType<CR>
+nmap <leader>r :TernRename<CR>
