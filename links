@@ -17,4 +17,4 @@ sudo ln -s $HOME/repo/dotfiles/etc/nginx/sites-available /etc/nginx/sites-availa
 # Jenkins conf
 sudo ln -s $HOME/repo/dotfiles/etc/default/jenkins /etc/default/jenkins
 # JSHint conf
-sudo ln -s $HOME/repo/dotfiles/jshintrc $HOME/.jshintrc
+ln -s $HOME/repo/dotfiles/jshintrc $HOME/.jshintrc

@@ -43,8 +43,8 @@ map <F2> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 "cygwin backspace tweak
 set backspace=indent,eol,start
 
-"subline in edit mode
-:autocmd InsertEnter,InsertLeave * set cul!
+"subline in edit mode (Not very usefull, especially with powerline)
+":autocmd InsertEnter,InsertLeave * set cul!
 
 " markdown unfolded
 let g:vim_markdown_folding_disabled=1
