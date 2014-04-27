@@ -4,10 +4,10 @@ git clone git://github.com/kongo2002/fsharp-vim.git vim/bundle/fsharp-vim
 git clone git://github.com/tpope/vim-fugitive.git vim/bundle/vim-fugitive
 # repl
 git clone git://github.com/jpalardy/vim-slime.git vim/bundle/vim-slime
+# find tool: need to read doc
+git clone https://github.com/kien/ctrlp.vim.git vim/bundle/ctrlp.vim
 # surround with anythin: need to read doc
 #git clone https://github.com/tpope/vim-surround vim/bundle/vim-surround
-# find tool: need to read doc
-#git clone https://github.com/kien/ctrlp.vim.git vim/bundle/ctrlp.vim
 
 ## previous submodules
 # precision colorscheme for the vim text editor http://ethanschoonover.com/solarized
