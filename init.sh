@@ -1,15 +1,15 @@
 # fsharp hilighting
-git clone git://github.com/kongo2002/fsharp-vim.git vim/bundle/fsharp-vim
+# git clone git://github.com/kongo2002/fsharp-vim.git vim/bundle/fsharp-vim
 # git integration
 git clone git://github.com/tpope/vim-fugitive.git vim/bundle/vim-fugitive
 # repl
-git clone git://github.com/jpalardy/vim-slime.git vim/bundle/vim-slime
+# git clone git://github.com/jpalardy/vim-slime.git vim/bundle/vim-slime
 # find tool: need to read doc
 git clone https://github.com/kien/ctrlp.vim.git vim/bundle/ctrlp.vim
 # surround with anythin: need to read doc
 #git clone https://github.com/tpope/vim-surround vim/bundle/vim-surround
-
-## previous submodules
+# easy comments
+git clone https://github.com/scrooloose/nerdcommenter.git vim/bundle/nerdcommenter
 # precision colorscheme for the vim text editor http://ethanschoonover.com/solarized
 git clone https://github.com/altercation/vim-colors-solarized.git vim/bundle/vim-colors-solarized
 # A tree explorer plugin for vim.
@@ -23,13 +23,13 @@ git clone https://github.com/itchyny/lightline.vim vim/bundle/lightline.vim
 # Syntax checking hacks for vim
 git clone https://github.com/scrooloose/syntastic.git vim/bundle/syntastic
 # Vim plugin that displays tags in a window, ordered by class etc. http://majutsushi.github.com/tagbar/
-git clone https://github.com/majutsushi/tagbar.git vim/bundle/tagbar
+# git clone https://github.com/majutsushi/tagbar.git vim/bundle/tagbar
 # Perform all your vim insert mode completions with Tab
 git clone https://github.com/ervandew/supertab.git vim/bundle/supertab
 
 # language specific
 ## Tern (js ctags) plugin for Vim
-#git clone https://github.com/marijnh/tern_for_vim.git vim/bundle/tern_for_vim
+git clone https://github.com/marijnh/tern_for_vim.git vim/bundle/tern_for_vim
 ## omnisharp: .Net completion
 #git clone https://github.com/nosami/Omnisharp.git vim/bundle/omnisharp
 ## CoffeeScript support for vim
