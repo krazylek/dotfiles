@@ -1,5 +1,6 @@
 # fsharp hilighting
 # git clone git://github.com/kongo2002/fsharp-vim.git vim/bundle/fsharp-vim
+# git clone https://github.com/fsharp/vim-fsharp.git vim/bundle/fsharp
 # git integration
 git clone git://github.com/tpope/vim-fugitive.git vim/bundle/vim-fugitive
 # repl
@@ -26,6 +27,8 @@ git clone https://github.com/scrooloose/syntastic.git vim/bundle/syntastic
 # git clone https://github.com/majutsushi/tagbar.git vim/bundle/tagbar
 # Perform all your vim insert mode completions with Tab
 git clone https://github.com/ervandew/supertab.git vim/bundle/supertab
+# nice theme
+git clone https://github.com/jpo/vim-railscasts-theme.git vim/bundle/railscasts-theme
 
 # language specific
 ## Tern (js ctags) plugin for Vim
