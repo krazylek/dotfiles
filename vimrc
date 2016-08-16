@@ -26,8 +26,8 @@ set directory=~/.vim-tmp
 set ruler
 let mapleader = ","
 set background=dark
-"let g:solarized_termcolors=256
-"colorscheme solarized 
+map <leader>t :colorscheme solarized<CR>:set background=dark<CR>
+" :let g:solarized_termcolors=256
 colorscheme desert256
 
 " ignore files in .gitignore with ctrl-p

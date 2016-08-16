@@ -3,13 +3,5 @@ ln -s $HOME/repo/dotfiles/vim $HOME/.vim
 ln -s $HOME/repo/dotfiles/vimrc $HOME/.vimrc
 ln -s $HOME/repo/dotfiles/bashrc $HOME/.bashrc
 ln -s $HOME/repo/dotfiles/bash_profile $HOME/.bash_profile
-# Apache conf
-sudo ln -s $HOME/repo/dotfiles/etc/apache2/sites-available /etc/apache2/sites-available
-sudo ln -s $HOME/repo/dotfiles/etc/apache2/ports.conf /etc/apache2/ports.conf
-sudo ln -s $HOME/repo/dotfiles/etc/apache2/httpd.conf /etc/apache2/httpd.conf
-# Php5 cgi conf
-sudo ln -s $HOME/repo/dotfiles/etc/php5/cgi/php.ini /etc/php5/cgi/php.ini
-# Nginx conf
-sudo ln -s $HOME/repo/dotfiles/etc/nginx/sites-available /etc/nginx/sites-available
 # JSHint conf
 ln -s $HOME/repo/dotfiles/jshintrc $HOME/.jshintrc
