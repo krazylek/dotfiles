@@ -1,7 +1,7 @@
 # Home conf
 ln -s $HOME/repo/dotfiles/vim $HOME/.vim
 ln -s $HOME/repo/dotfiles/vimrc $HOME/.vimrc
-ln -s $HOME/repo/dotfiles/bashrc $HOME/.bashrc
-ln -s $HOME/repo/dotfiles/bash_profile $HOME/.bash_profile
+# bashrc just for informations...
+# ln -s $HOME/repo/dotfiles/bashrc $HOME/.bashrc
 # JSHint conf
 ln -s $HOME/repo/dotfiles/jshintrc $HOME/.jshintrc

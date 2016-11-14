@@ -11,12 +11,10 @@ git clone https://github.com/ctrlpvim/ctrlp.vim.git vim/bundle/ctrlp.vim
 #git clone https://github.com/tpope/vim-surround vim/bundle/vim-surround
 # easy comments
 git clone https://github.com/scrooloose/nerdcommenter.git vim/bundle/nerdcommenter
-# precision colorscheme for the vim text editor http://ethanschoonover.com/solarized
-git clone https://github.com/altercation/vim-colors-solarized.git vim/bundle/vim-colors-solarized
 # A tree explorer plugin for vim.
 git clone https://github.com/scrooloose/nerdtree.git vim/bundle/nerdtree
 # Resize windows automatically using the Golden Ratio
-git clone https://github.com/vim-scripts/golden-ratio.git vim/bundle/golden-ratio
+# git clone https://github.com/vim-scripts/golden-ratio.git vim/bundle/golden-ratio
 # Markdown Vim Mode http://plasticboy.com/markdown-vim-mode/
 git clone https://github.com/plasticboy/vim-markdown.git vim/bundle/vim-markdown
 # A light and configurable statusline/tabline for Vim
@@ -27,8 +25,6 @@ git clone https://github.com/scrooloose/syntastic.git vim/bundle/syntastic
 # git clone https://github.com/majutsushi/tagbar.git vim/bundle/tagbar
 # Perform all your vim insert mode completions with Tab
 git clone https://github.com/ervandew/supertab.git vim/bundle/supertab
-# nice theme
-git clone https://github.com/jpo/vim-railscasts-theme.git vim/bundle/railscasts-theme
 
 # language specific
 ## Tern (js ctags) plugin for Vim
@@ -39,3 +35,9 @@ git clone https://github.com/marijnh/tern_for_vim.git vim/bundle/tern_for_vim
 #https://github.com/kchmck/vim-coffee-script.git
 ## Twig PHP syntax highlighting, snipMate, etc. 
 #git clone https://github.com/beyondwords/vim-twig.git vim/bundle/vim-twig
+
+#-----------------------------------------------
+# install
+#-----------------------------------------------
+CURRENTDIR = pwd
+cd vim/bundle/tern_for_vim && npm install && cd $CURRENTDIR
