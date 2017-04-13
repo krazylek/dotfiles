@@ -36,6 +36,11 @@ git clone https://github.com/marijnh/tern_for_vim.git vim/bundle/tern_for_vim
 ## Twig PHP syntax highlighting, snipMate, etc. 
 #git clone https://github.com/beyondwords/vim-twig.git vim/bundle/vim-twig
 
+# WRITING
+git clone https://github.com/junegunn/limelight.vim vim/bundle/limelight
+git clone https://github.com/junegunn/goyo.vim vim/bundle/goyo
+
+
 #-----------------------------------------------
 # install
 #-----------------------------------------------
