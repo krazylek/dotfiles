@@ -12,6 +12,10 @@ Plug 'carlitux/deoplete-ternjs' " { 'do': 'npm install ternjs -g' }  need ternjs
 
 " language specific
 Plug 'marijnh/tern_for_vim', { 'do': 'npm install' }
+Plug 'rust-lang/rust.vim'
+Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
+  " should incude npm -i -g javascript-typescript-langserver
+Plug 'leafgarland/typescript-vim'
 
 "# omnisharp: .Net completion
 "Plug 'nosami/Omnisharp.git nvim/autoload/omnisharp
@@ -83,18 +87,45 @@ colorscheme railscasts
 " Turn off auto-indent when pasting text
 set pastetoggle=<F3>
 " Open/Close NERDTree
-map <F2> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
+"map <F2> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
+map <leader>e :NERDTreeToggle<CR>:NERDTreeMirror<CR>
+
+" rust-vim
+let g:autofmt_autosave = 1
+
+" Language Servers Client
+set hidden
+let g:LanguageClient_serverCommands = {
+    \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
+    \ 'javascript': ['javascript-typescript-stdio'],
+    \ 'typescript': ['javascript-typescript-stdio'],
+    \ 'javascript.jsx': ['javascript-typescript-stdio'],
+    \ }
+    "\ 'javascript.jsx': ['javascript-typescript-stdio'],
+
+nnoremap <leader>i :call LanguageClient_textDocument_hover()<CR>
+nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
+nnoremap <leader>d :call LanguageClient_textDocument_definition()<CR>
+nnoremap <silent> <F12> :call LanguageClient_textDocument_definition()<CR>
+"nnoremap <leader>r :call LanguageClient_textDocument_rename()<CR>
+nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
+nnoremap <leader>s :call LanguageClient_textDocument_documentSymbol()<CR>
+
+" tern shortcuts
+"autocmd FileType javascript nmap <silent> gd :TernDef<CR>
+"autocmd FileType javascript nmap <leader>d :TernDef<CR>
+"autocmd FileType javascript nmap <F12> :TernDef<CR>
+"autocmd FileType javascript nmap <leader>i :TernDoc<CR>
+"autocmd FileType javascript nmap <leader>v :TernType<CR>
+autocmd FileType javascript nmap <leader>r :TernRename<CR>
+
 
 
 "setup denite
 "nnoremap <C-p> :Denite file_rec<CR>
 
 " neomake linter
-let g:neomake_javascript_enabled_makers = ['jshint']
-let g:neomake_javascript_jshint_maker = {
-    \ 'args': ['--verbose'],
-    \ 'errorformat': '%A%f: line %l\, col %v\, %m \(%t%*\d\)',
-    \ }
+let g:neomake_javascript_enabled_makers = ['eslint']
 autocmd! BufWritePost * Neomake
 
 " Enable Deoplete
@@ -119,13 +150,6 @@ let g:deoplete#sources#ternjs#tern_bin = '~/.local/share/nvim/plugged/tern_for_v
 let g:deoplete#sources#ternjs#types = 1
 let g:deoplete#sources#ternjs#depths = 1
 
-
-" tern shortcuts
-nmap <leader>d :TernDef<CR>
-nmap <F12> :TernDef<CR>
-nmap <leader>i :TernDoc<CR>
-nmap <leader>v :TernType<CR>
-nmap <leader>r :TernRename<CR>
 
 
 "iterm cursor change insert mode
