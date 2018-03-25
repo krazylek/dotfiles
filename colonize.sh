@@ -1,5 +1,5 @@
-mkdir -p vim/autoload vim/bundle ~/.vim-tmp
-curl -LSso vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-sh init-vim-plugins.sh
-sh init-vim-colors.sh
+# vim as default text editor
+sh init-vim.sh
+# nvim more or less as an IDE
+sh init-nvim.sh
 sh link.sh
